@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Currency Symbol Replacer",
+    "version": "1.0",
+    "description": "Replaces ¤ with ₽ on web pages",
+    "permissions": ["scripting"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
